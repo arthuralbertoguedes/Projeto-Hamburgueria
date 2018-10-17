@@ -1,0 +1,204 @@
+/*RESETS*/
+    
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+html,body{
+    height: 100%;
+    overflow-x: hidden;
+    background-color: rgb(239,233,221);
+    
+}
+h1,h2,h3,h4{
+    font-family: "Luckiest Guy", cursive !important;
+}
+
+ul{
+    list-style: none;
+    padding: 10px;
+    margin-top: 75px;
+}
+a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.botaoMenu{
+    cursor: pointer;
+}
+
+/*Configurando Menu Aberto*/
+
+.menuAberto{
+    height: 100%;
+    background-color: rgb(52, 58, 64);
+    width: 200px;
+    display: flex;
+    text-align: left;
+    position: fixed;
+    top:0;
+    right: 0;
+    margin-right: -200px;
+    font-family: 'Chango', cursive;
+    font-weight: 0;
+    z-index: 2;
+}
+.menuAberto h1{
+    font-size: 25px;
+    position: absolute;
+    top: 25px;
+    left: 5px;
+    color: white;
+}
+.botaoFechar{
+    height: 45px;
+    background-color: inherit;
+    border: none;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+/*Estilizando Header e Nav Superior*/
+.backgroundHeader{
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    background: url("../images/header_bg.jpg") center center no-repeat;
+    background-size: cover;
+}
+#menuSuperior{
+    background-color: rgb(52, 58, 64);
+}
+.tituloHeader,.paragrafoHeader{
+    font-family: 'Gloria Hallelujah', cursive;
+    color: white;
+}
+.paragrafoHeader:before{
+    content: '✓';
+    color: green;
+    font-size: 150%;
+    margin-right: 5px;
+    font-weight: 800;
+}
+.tituloNav{
+    font-family: 'Gloria Hallelujah', cursive !important;
+    font-size: 110%;
+ }
+ .conteudoLogo{
+     position: relative;
+     animation: animateLogo 3s;
+ }
+@keyframes animateLogo{
+    0%{
+        top: -200px;
+    }
+    100%{
+        top: 0;
+    }
+}
+.paragrafoHeader:nth-of-type(1),.paragrafoHeader:nth-of-type(2),.paragrafoHeader:nth-of-type(3),.tituloHeader{
+   display: none;
+}
+
+/*Estilizando seção principal*/
+                        
+.divOferta1{
+    background: url("../images/hamburguer-img-1.jpg");
+    background-size: 100% 100%;
+    height: 360px;
+}
+.divOfertaConteudo1{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    color: white;
+    
+}
+.ofertaLimitada{
+    position: absolute;
+    bottom: 0;
+    margin-left: 10px;
+    font-size: 90%;
+}
+.divOferta2{
+    background: url("../images/hamburguer-img-2.jpg");
+    background-size: 100% 100%;
+    height: 360px;
+}
+.divOfertaConteudo2{
+    width: 200px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 55px;
+}
+
+.divOferta3{
+    background: url("../images/hamburguer-img-3.jpg");
+    background-size: 100% 100%;
+    height: 360px;
+}
+.divOfertaConteudo3{
+    background-color: rgba(147, 79, 50, 0.93);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    
+}
+.divOferta4{
+    background: url("../images/hamburguer-img-4.jpg");
+    background-size: 100% 100%;
+    height: 360px;
+}
+.divOfertaConteudo4{
+    color: white;
+    
+}
+.divOfertaConteudo4 h3:after{
+    content: '';
+    width: 280px;
+    color: white;
+    display: block;
+    border-bottom: 2px solid white;
+    margin: 20px 0;
+}
+.divOfertaConteudo4 p:before{
+    content: '✓';
+    color: green;
+    font-size: 150%;
+    margin-right: 5px;
+    font-weight: 800;
+}
+/*Estilizando Footer*/
+footer{
+    background-color: rgb(52, 58, 64);
+    color: white;
+}
+.listaRodape{
+    margin-top: 0;
+}
+.listaRodape li{
+    display: inline;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+@media (min-width: 600px){
+    header{
+        
+        background-size: cover;
+        background-position-y: 90px;
+    }
+    
+}
+@media (min-width: 758px){
+    .divOfertaConteudo{
+        background-color: unset;
+        width: 300px;
+        float: right;
+    }
+    
+}
